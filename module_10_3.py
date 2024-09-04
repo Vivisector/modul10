@@ -33,7 +33,8 @@ class Bank:
 
             time.sleep(0.001)
 
-bank = Bank()print('- '*20)
+bank = Bank()
+print('- '*20)
 thr_deposite = threading.Thread(target=bank.deposit)
 thr_take = threading.Thread(target=bank.take)
 
